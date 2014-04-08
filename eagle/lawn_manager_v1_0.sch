@@ -5355,6 +5355,8 @@ general purpose rectifier, 1 A</description>
 <part name="GND7" library="supply1" deviceset="GND" device=""/>
 <part name="GND8" library="supply1" deviceset="GND" device=""/>
 <part name="GND9" library="supply1" deviceset="GND" device=""/>
+<part name="R2" library="rcl" deviceset="R-US_" device="0204/5"/>
+<part name="R3" library="rcl" deviceset="R-US_" device="0204/5"/>
 </parts>
 <sheets>
 <sheet>
@@ -5391,6 +5393,8 @@ general purpose rectifier, 1 A</description>
 <instance part="GND7" gate="1" x="124.46" y="15.24"/>
 <instance part="GND8" gate="1" x="101.6" y="17.78"/>
 <instance part="GND9" gate="1" x="109.22" y="17.78"/>
+<instance part="R2" gate="G$1" x="96.52" y="91.44" rot="R90"/>
+<instance part="R3" gate="G$1" x="101.6" y="88.9" rot="R90"/>
 </instances>
 <busses>
 </busses>
@@ -5667,8 +5671,11 @@ general purpose rectifier, 1 A</description>
 <net name="SDA" class="0">
 <segment>
 <pinref part="IC1" gate="G$1" pin="PC1(ADC1)"/>
-<wire x1="78.74" y1="83.82" x2="96.52" y2="83.82" width="0.1524" layer="91"/>
 <label x="83.82" y="83.82" size="1.778" layer="91"/>
+<wire x1="78.74" y1="83.82" x2="101.6" y2="83.82" width="0.1524" layer="91"/>
+<pinref part="R3" gate="G$1" pin="1"/>
+<wire x1="101.6" y1="83.82" x2="114.3" y2="83.82" width="0.1524" layer="91"/>
+<junction x="101.6" y="83.82"/>
 </segment>
 </net>
 <net name="N$13" class="0">
@@ -5683,6 +5690,7 @@ general purpose rectifier, 1 A</description>
 <pinref part="IC1" gate="G$1" pin="PC0(ADC0)"/>
 <wire x1="78.74" y1="86.36" x2="96.52" y2="86.36" width="0.1524" layer="91"/>
 <label x="83.82" y="86.36" size="1.778" layer="91"/>
+<pinref part="R2" gate="G$1" pin="1"/>
 </segment>
 </net>
 </nets>
