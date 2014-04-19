@@ -5527,15 +5527,15 @@ general purpose rectifier, 1 A</description>
 </net>
 <net name="SELECT_BUTTON" class="0">
 <segment>
-<pinref part="IC1" gate="G$1" pin="PD2(INT0)"/>
-<wire x1="78.74" y1="58.42" x2="119.38" y2="58.42" width="0.1524" layer="91"/>
 <wire x1="119.38" y1="58.42" x2="119.38" y2="60.96" width="0.1524" layer="91"/>
 <wire x1="119.38" y1="60.96" x2="124.46" y2="60.96" width="0.1524" layer="91"/>
-<label x="93.98" y="60.96" size="1.778" layer="91"/>
 <pinref part="C1" gate="G$1" pin="1"/>
 <wire x1="124.46" y1="60.96" x2="134.62" y2="60.96" width="0.1524" layer="91"/>
 <junction x="124.46" y="60.96"/>
 <pinref part="X3" gate="-1" pin="KL"/>
+<pinref part="IC1" gate="G$1" pin="PD2(INT0)"/>
+<wire x1="78.74" y1="58.42" x2="119.38" y2="58.42" width="0.1524" layer="91"/>
+<label x="104.14" y="58.42" size="1.778" layer="95" rot="R180"/>
 </segment>
 </net>
 <net name="SCROLL_BUTTON" class="0">
@@ -5545,41 +5545,31 @@ general purpose rectifier, 1 A</description>
 <wire x1="119.38" y1="55.88" x2="119.38" y2="50.8" width="0.1524" layer="91"/>
 <wire x1="119.38" y1="50.8" x2="119.38" y2="48.26" width="0.1524" layer="91"/>
 <wire x1="119.38" y1="48.26" x2="134.62" y2="48.26" width="0.1524" layer="91"/>
-<label x="93.98" y="53.34" size="1.778" layer="95"/>
 <pinref part="C2" gate="G$1" pin="1"/>
 <junction x="119.38" y="50.8"/>
 <pinref part="X4" gate="-1" pin="KL"/>
-</segment>
-</net>
-<net name="LCD_D7" class="0">
-<segment>
-<pinref part="IC1" gate="G$1" pin="PD4(XCK/T0)"/>
-<wire x1="78.74" y1="53.34" x2="96.52" y2="53.34" width="0.1524" layer="91"/>
-<wire x1="96.52" y1="53.34" x2="96.52" y2="45.72" width="0.1524" layer="91"/>
-<label x="96.52" y="40.64" size="1.016" layer="91" rot="R90"/>
-</segment>
-</net>
-<net name="LCD_D6" class="0">
-<segment>
-<pinref part="IC1" gate="G$1" pin="PD5(T1)"/>
-<wire x1="78.74" y1="50.8" x2="93.98" y2="50.8" width="0.1524" layer="91"/>
-<wire x1="93.98" y1="50.8" x2="93.98" y2="45.72" width="0.1524" layer="91"/>
-<label x="93.98" y="40.64" size="1.016" layer="91" rot="R90"/>
-</segment>
-</net>
-<net name="LCD_D5" class="0">
-<segment>
-<pinref part="IC1" gate="G$1" pin="PD6(AIN0)"/>
-<wire x1="78.74" y1="48.26" x2="91.44" y2="48.26" width="0.1524" layer="91"/>
-<wire x1="91.44" y1="48.26" x2="91.44" y2="45.72" width="0.1524" layer="91"/>
-<label x="91.44" y="40.64" size="1.016" layer="91" rot="R90"/>
+<label x="104.14" y="55.88" size="1.778" layer="95" rot="R180"/>
 </segment>
 </net>
 <net name="LCD_D4" class="0">
 <segment>
-<pinref part="IC1" gate="G$1" pin="PD7(AIN1)"/>
-<wire x1="78.74" y1="45.72" x2="88.9" y2="45.72" width="0.1524" layer="91"/>
-<label x="86.36" y="45.72" size="1.016" layer="91" rot="R270"/>
+<pinref part="IC1" gate="G$1" pin="PD4(XCK/T0)"/>
+<wire x1="78.74" y1="53.34" x2="96.52" y2="53.34" width="0.1524" layer="91"/>
+<label x="91.44" y="53.34" size="1.778" layer="95" rot="R180"/>
+</segment>
+</net>
+<net name="LCD_D5" class="0">
+<segment>
+<pinref part="IC1" gate="G$1" pin="PD5(T1)"/>
+<wire x1="78.74" y1="50.8" x2="93.98" y2="50.8" width="0.1524" layer="91"/>
+<label x="91.44" y="50.8" size="1.778" layer="95" rot="R180"/>
+</segment>
+</net>
+<net name="LCD_DB6" class="0">
+<segment>
+<pinref part="IC1" gate="G$1" pin="PD6(AIN0)"/>
+<wire x1="78.74" y1="48.26" x2="91.44" y2="48.26" width="0.1524" layer="91"/>
+<label x="91.44" y="48.26" size="1.778" layer="95" rot="R180"/>
 </segment>
 </net>
 <net name="REG_SEL" class="0">
@@ -5619,10 +5609,10 @@ general purpose rectifier, 1 A</description>
 </net>
 <net name="N$12" class="0">
 <segment>
-<pinref part="IC1" gate="G$1" pin="PB0(ICP)"/>
 <pinref part="K1" gate="1" pin="2"/>
 <wire x1="101.6" y1="30.48" x2="101.6" y2="40.64" width="0.1524" layer="91"/>
-<wire x1="101.6" y1="40.64" x2="78.74" y2="40.64" width="0.1524" layer="91"/>
+<pinref part="IC1" gate="G$1" pin="PB0(ICP)"/>
+<wire x1="78.74" y1="40.64" x2="101.6" y2="40.64" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$6" class="0">
@@ -5691,6 +5681,13 @@ general purpose rectifier, 1 A</description>
 <wire x1="78.74" y1="86.36" x2="96.52" y2="86.36" width="0.1524" layer="91"/>
 <label x="83.82" y="86.36" size="1.778" layer="91"/>
 <pinref part="R2" gate="G$1" pin="1"/>
+</segment>
+</net>
+<net name="LCD_DB7" class="0">
+<segment>
+<pinref part="IC1" gate="G$1" pin="PD7(AIN1)"/>
+<wire x1="78.74" y1="45.72" x2="88.9" y2="45.72" width="0.1524" layer="91"/>
+<label x="91.44" y="45.72" size="1.778" layer="95" rot="R180"/>
 </segment>
 </net>
 </nets>
