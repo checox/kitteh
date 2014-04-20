@@ -36,6 +36,9 @@ int main(void)
         //maybe add a conversion function here
         sample_avg += this_sample/100.0;
       }
+      unsigned char str_adc_sample[40];
+      //sprintf(str_adc_sample, "Moisture = %" PRIu16, sample_avg); 
+      //strout(0x40, (unsigned char *) str_adc_sample);
     }
   return 0;   /* never reached */
 }
